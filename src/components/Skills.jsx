@@ -8,7 +8,7 @@ const Skills = () => {
     <div className='grid grid-cols-8 md:grid-flow-row'>
         {skills.map((skill, index) => {
             return (
-                <div>
+                <div className='flex items-center justify-center' key={index}>
                     <img src={skill.image} alt="" />
                 </div>
             )
@@ -19,4 +19,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Skills   
